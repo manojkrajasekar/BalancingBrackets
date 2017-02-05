@@ -2,6 +2,19 @@
 #include<fstream>
 #include<string>
 #include<vector>
+void push(string &str, char ch)
+{
+	str.push_back(ch);
+}
+
+char pop(string &str) {
+	if (str.length() == 0) return ' ';
+
+	char ch = str.back();
+
+	str.pop_back();
+	return ch;
+}
 
 int main() {
 	char ch = ' ';
